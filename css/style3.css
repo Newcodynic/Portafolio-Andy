@@ -1,0 +1,149 @@
+body{
+    background-color: #c0c0c0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+*{
+    box-sizing: border-box;
+}
+
+/*-------------------------------------------------------------------------------------------------------*
+
+    /*------------------------------------*/
+        /*--Comienza Encabezamiento--*/
+    /*------------------------------------*/
+
+.envase{
+    background-color:#2e2e2e;
+    max-width: 1140px;
+    margin: auto;
+}
+.fila{
+    display: flex;
+    flex-wrap: wrap;
+}
+header{
+    background-color: #000000;
+    position: absolute;
+    right: 0px;
+    left:0px;
+    border-bottom: 1px solid #9f9f9f;
+    z-index: 10;
+}
+header .fila{
+    justify-content: space-between;
+    align-items: center;
+}
+header .nombre-de-la-marca a{
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 500;
+    color: #ffffff;
+    text-transform: uppercase;
+    position: relative;
+    transition: all .5s ease;
+}
+header .nombre-de-la-marca a:hover{
+    color:orangered;
+    font-size: 40px;
+}
+header .barra-de-navegacion ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+header .barra-de-navegacion ul li{
+    display: inline-block;
+    margin-left: 35px;
+}
+header .barra-de-navegacion ul li a{
+    font-size: 15px;
+    text-decoration: none;
+    line-height: 72px;
+    color: #ffffff;
+    display: block;
+    font-weight: 600;
+    position: relative;
+}
+header .barra-de-navegacion ul li a::before{
+    content: " ";
+    height: 3px;
+    background-color: #ffffff;
+    width: 0%;
+    position: absolute;
+    right: 0px;
+    bottom: -1px;
+    transition: all .5s ease;
+}
+header .barra-de-navegacion ul li a:hover::before{
+    width: 100%;
+    left: 0;
+}
+header .barra-de-navegacion ul li a.active::before{
+    width: 100%;
+    left: 0;
+}
+    /*------------------------------------*/
+         /*--Fin Encabezamiento--*/
+    /*------------------------------------*/
+
+/*-------------------------------------------------------------------------------------------------------*/    
+
+    /*------------------------------------*/
+            /*--Comienza Trabajos--*/
+    /*------------------------------------*/
+.Trabajos{
+    margin-right: 40px;
+    margin-left: 40px;
+    padding: 100px 15px;
+    background-color: #c0c0c0;
+}
+.seccion-titulo{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 30px;
+}
+.seccion-titulo h1{
+    display: block;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: black;
+    margin: 0 0 10px;
+    position: relative;
+}
+.seccion-titulo h1:before{
+    content: " ";
+    left: 565px;
+    position: absolute;
+    height: 3px;
+    right: 46%;
+    background-color: #ff4500;
+    bottom: 0px;
+}
+.text-center{
+    text-align: center!important;
+}
+.cv-btn a{
+    margin-top: 20px;
+    margin-left: 605px;
+    border-radius: 4px;
+    color: #000000;
+    border: 1px solid #000000;
+    padding: 12px 25px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all .5s ease;
+    background-color: transparent;
+}
+.cv-btn a:hover{
+    background-color: #000000;
+    color: #ffffff;
+}
+    /*------------------------------------*/
+            /*--Fin Trabajos--*/
+    /*------------------------------------*/
+
+/*-------------------------------------------------------------------------------------------------------*/
